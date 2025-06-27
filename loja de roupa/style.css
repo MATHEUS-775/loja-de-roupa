@@ -1,0 +1,183 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(90deg, #ff00c8, #6100ff);
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #fff !important;
+    text-transform: uppercase;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    margin-left: 15px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffd700 !important;
+  }
+  
+  /* Banner */
+  .banner {
+    background: url('img/banner.jpg') center center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .banner .container {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+  
+  .banner h1 {
+    font-size: 3.5rem;
+    color: #00ffea;
+    text-shadow: 2px 2px 10px #000;
+    animation: fadeInDown 2s ease-in-out;
+  }
+  
+  .banner p {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  
+  /* Seções */
+  section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6100ff;
+  }
+  
+  /* Coleção */
+  #colecao {
+    background: #ffe3f1;
+  }
+  
+  #colecao img {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #colecao img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(255, 0, 200, 0.3);
+  }
+  
+  #colecao p {
+    text-align: center;
+    font-weight: 500;
+    color: #d60085;
+  }
+  
+  /* Promoções */
+  #promocoes {
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    color: #fff;
+  }
+  
+  #promocoes img {
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sobre */
+  #sobre {
+    background-color: #fff8dc;
+    text-align: center;
+    color: #444;
+  }
+  
+  #sobre p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  
+  /* Contato */
+  #contato {
+    background: #222;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  /* Botões personalizados */
+  .btn-custom {
+    background: #ff00c8;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background: #ffcc00;
+    color: #000;
+  }
+  
+  /* Animações */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .banner h1 {
+      font-size: 2.3rem;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  
+    #colecao .col-md-6 {
+      margin-bottom: 2rem;
+    }
+  }
+  
